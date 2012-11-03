@@ -12,7 +12,7 @@ home=$(sh -c "echo ~$(whoami)")
 # The name of the shell we're running on.
 shell=$(ps -c -o command -p $$ | tail -n1 | sed -e 's/^\-//')
 
-from="https://nodeload.github.com/benhoskings/babushka/tarball/$ref"
+from="https://github.com/benhoskings/babushka/archive/$ref.tar.gz"
 to="$home/.babushka/bootstrap"
 
 interactive=$([ -t 0 ] && echo 'true' || echo 'false')
